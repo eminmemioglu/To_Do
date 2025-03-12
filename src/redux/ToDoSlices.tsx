@@ -13,10 +13,13 @@ export const ToDoSlice = createSlice({
     reducers: {
         createToDo: (state: ToDoInitialState, action: PayloadAction<ToDoType>) => {
             state.todos = [...state.todos, action.payload]
+        },
+        removeToDoByID: (state: ToDoInitialState, action: PayloadAction<number>) => {
+            state.todos = [...state.todos.filter((todo: ToDoType) => todo.id !== action.payload)]
         }
 
     }
 })
-export const { createToDo } = ToDoSlice.actions
+export const { createToDo, removeToDoByID } = ToDoSlice.actions
 
 export default ToDoSlice.reducer
