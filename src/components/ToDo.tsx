@@ -9,8 +9,8 @@ function ToDo() {
                 <p>Bu ilk todo</p>
             </div>
             <div>
-                <TiDeleteOutline />
-                <FaCheck />
+                <TiDeleteOutline className='icons' style={{ marginRight: '10px', fontSize: '20px' }} />
+                <FaCheck className='icons' />
 
             </div>
         </div>

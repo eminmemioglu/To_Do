@@ -1,8 +1,9 @@
 import React from 'react'
+import ToDo from './ToDo'
 
 function ToDoList() {
     return (
-        <div>ToDoList</div>
+        <div><ToDo /></div>
     )
 }
 
