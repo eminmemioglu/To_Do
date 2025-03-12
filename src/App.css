@@ -7,3 +7,35 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.todo-create {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.todo-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid lightblue;
+    outline: none;
+}
+
+.todo-create-button {
+    border: none;
+    margin-top: 20px;
+    border-radius: 3px;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.todo-create-button:hover {
+    background-color: rgb(27, 78, 61);
+    border-bottom: 1px solid lightblue;
+
+
+}
